@@ -1,0 +1,59 @@
+{
+	"name": "realbrand-uimvp-client",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "cross-env PORT=4040 react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"lint": "eslint . --ext .ts,.tsx --fix",
+		"api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest",
+			"eslint:recommended",
+			"plugin:react/recommended",
+			"plugin:@typescript-eslint/recommended"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/react-dom": "^18.0.10",
+		"@types/react-router-dom": "^5.3.3",
+		"autoprefixer": "^10.4.13",
+		"cross-env": "^7.0.3",
+		"esbuild": "^0.16.12",
+		"postcss": "^8.4.20",
+		"tailwindcss": "^3.2.4"
+	},
+	"dependencies": {
+		"@auth0/auth0-react": "^1.12.0",
+		"@material-tailwind/react": "^1.2.4",
+		"@material-ui/icons": "^4.11.3",
+		"@tailwindcss/forms": "^0.5.3",
+		"@types/node": "^18.11.18",
+		"@types/react": "^17.0.52",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-icons": "^4.7.1",
+		"react-router-dom": "^6.6.1",
+		"react-scripts": "^5.0.1",
+		"realbrand-uimvp": "file:..",
+		"typescript": "^4.9.4",
+		"web-vitals": "^3.1.0"
+	}
+}
